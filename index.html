@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll</title>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <script
+    src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin="">
+  </script>
+    <!-- styles -->
+  <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="home">
+      <!-- navbar -->
+      <nav id="nav" class="nav">
+        <div class="nav-center">
+          <!-- nav header-->
+          <div class="nav-header">
+            <img src="./logo.svg" alt="logo" class="logo" />
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- links -->
+        <div class="links-container">
+          <ul class="links">
+            <li>
+              <a href="#home" class="scroll-link">home</a>
+            </li>
+            <li>
+              <a href="#about" class="scroll-link">about</a>
+            </li>
+            <li>
+              <a href="#services" class="scroll-link">services</a>
+            </li>
+            <li>
+              <a href="#location" class="scroll-link">location</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- banner -->
+      <div class="banner">
+        <div class="container">
+          <h1>T shirt factory</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+            porro assumenda, impedit inventore voluptatum quam voluptatibus
+            architecto expedita laboriosam repudiandae voluptate id ducimus
+            nobis quasi reiciendis libero neque modi in?
+          </p>
+          <a href="#services" class="scroll-link btn btn-white">explore collection</a>
+        </div>
+      </div>
+    </header>
+    <!-- about -->
+    <section id="about" class="section">
+      <div class="title">
+        <h2>about <span>us</span></h2>
+        <div class="about">
+          <p>we are the bigest and older company of shirt in Taiwan since 1874</p>
+          <img src="img/T-Shirt_factory.jpg" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- services -->
+    <section id="services" class="section">
+      <div class="title">
+        <h2>our <span>services</span></h2>
+      </div>
+      <p>here some of our collection</p>
+      <div class="shirt">
+      </div>
+    </section>
+
+    <!-- location -->
+    <section id="location" class="section">
+      <div class="title">
+        <h2>our <span>location</span></h2>
+      </div>
+      <div class="location">
+        <p >We are at your disposal:</p>
+        <p>Sunday to Thursday from 8:00 to 19:00, holiday eves from 8:00 to 12:30, weekdays from 8:00 to 17:00
+          Additional phone 00-6863122 or phone for callers from abroad 111-8-7313120</p>
+          
+        <div id="map"></div>
+      </div>
+      <div class="clients">
+        <img src="/img/client-1.png" alt="client">
+        <img src="/img/client-2.png" alt="client">
+        <img src="/img/client-3.png" alt="client">
+        <img src="/img/client-4.png" alt="client">
+        <img src="/img/client-5.png" alt="client">
+        <img src="/img/client-6.png" alt="client">
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="section">
+      <p>
+        Copyright © 
+        <span id="date">2021</span>. All Rights Reserved
+        <br>
+        use Scalable Press API, and Leaflet map
+      </p>
+    </footer>
+    <!-- back to top button-->
+    <a href="#home" class="scroll-link top-link">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
